@@ -1,7 +1,25 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedirectModule", "RedirectModule.csproj", "{EF14CD09-4444-4F57-BCE8-A03EF3C78ECF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{E06A4516-C58A-4AB6-A320-F03BF37C3AF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{4102CF11-0F29-4F44-8D53-BC8DA2C85100}"
+	ProjectSection(SolutionItems) = preProject
+		..\data\packages\301RedirectModule.xml = ..\data\packages\301RedirectModule.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App_Config", "App_Config", "{3B6AC729-14AE-48F2-978F-2CE82C654548}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{570A9E56-C6DC-4E6C-B9DA-9252FDC84446}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RedirectModule", "RedirectModule", "{8D4CB191-69AF-4950-8C72-701E27236E53}"
+	ProjectSection(SolutionItems) = preProject
+		..\App_Config\Include\SharedSource\SharedSource.RedirectModule.Serialisation.config = ..\App_Config\Include\SharedSource\SharedSource.RedirectModule.Serialisation.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4102CF11-0F29-4F44-8D53-BC8DA2C85100} = {E06A4516-C58A-4AB6-A320-F03BF37C3AF7}
+		{570A9E56-C6DC-4E6C-B9DA-9252FDC84446} = {3B6AC729-14AE-48F2-978F-2CE82C654548}
+		{8D4CB191-69AF-4950-8C72-701E27236E53} = {570A9E56-C6DC-4E6C-B9DA-9252FDC84446}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7615F148-492B-41C8-9B00-E31B928879C3}
