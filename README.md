@@ -3,9 +3,31 @@
 
 An improved version of the Sitecore 301 redirect module. Original version was created by Chris Castle, available at [http://trac.sitecore.net/301RedirectModule](http://trac.sitecore.net/301RedirectModule)
 
-Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak), [Mark Wiseman](https://github.com/mawiseman), [Thomas Baek](https://github.com/ThomasBaek), and [timgriff84](https://github.com/timgriff84)
+Improvements by [Alen Pelin](https://github.com/alenpelin), [Bhanu Korthiwada](https://github.com/BhanuKorthiwada), [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak), [Mark Wiseman](https://github.com/mawiseman), [Thomas Baek](https://github.com/ThomasBaek), and [timgriff84](https://github.com/timgriff84)
+
+## Installation
+
+1. Install `301 Redirect Module 1.6.1.zip` as a Sitecore Package to single or first CM instance
+2. Extract `301 Redirect Module 1.6.1 (files).zip` to the `Website` folder of all other instances
+
+## Build project
+
+1. Install `301 Redirect Module 1.6.1.zip` as a Sitecore Package to your local dev Sitecore instance (if not installed before)
+2. Compile `source/RedirectModule.sln` solution
+3. Deploy project to your local dev Sitecore instance, or
+   * copy `SharedSource.RedirectModule.dll` to `Website\bin` folder
+   * copy `SharedSource.RedirectModule.config` to `Website\App_Config\Include` folder
+4. Open `data/packages/301RedirectModule.xml` package project file in `Package Designer`
+5. Update package information if necessary, and save the project file
+6. Generate package
 
 ## Changelog ##
+
+**Version 1.6.1:**
+
+* Added support of configuration roles
+* Created CM/CD packages
+* More (TODO)
 
 **Version 1.6:**
 
@@ -72,11 +94,11 @@ OK, example time. A user just sent a request to http://mysite.com/old-site-area/
 
 1. The "Requested Expression" is tested and found to be a match, as per above.
 2. The value of the "Source Item" field is substituted as needed. In this case, ${Path} will become "/homepage" and ${OptionalQueryString} will become "?thesky=blue", so the final value of "Source Item" for this request becomes "/sitecore/content/Site/New Site Area/homepage?thesky=blue". ${Path} and ${OptionalQueryString} are names you can see in the "Requested Expression" field.
-4. Everything before the question mark is used to look up the path of an item in the Sitecore tree.
-5. If an item is found, its friendly URL is retrieved. In this case, the URL will be http://mysite.com/new-site-area/homepage
-6. The query string is put on the end. In this case, the URL will become http://mysite.com/new-site-area/homepage?thesky=blue
-7. A 301 redirect is issued, which tells browsers and search engines that the URL the user requested (http://mysite.com/old-site-area/homepage.aspx?thesky=blue) can now be found at http://mysite.com/new-site-area/homepage?thesky=blue.
-8. The user's browser follows the redirect and requests http://mysite.com/new-site-area/homepage?thesky=blue.
+3. Everything before the question mark is used to look up the path of an item in the Sitecore tree.
+4. If an item is found, its friendly URL is retrieved. In this case, the URL will be http://mysite.com/new-site-area/homepage
+5. The query string is put on the end. In this case, the URL will become http://mysite.com/new-site-area/homepage?thesky=blue
+6. A 301 redirect is issued, which tells browsers and search engines that the URL the user requested (http://mysite.com/old-site-area/homepage.aspx?thesky=blue) can now be found at http://mysite.com/new-site-area/homepage?thesky=blue.
+7. The user's browser follows the redirect and requests http://mysite.com/new-site-area/homepage?thesky=blue.
 
 ## Examples ##
 ##### Match only the path, dropping the query string #####

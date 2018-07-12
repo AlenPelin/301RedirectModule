@@ -2,23 +2,34 @@
   <Metadata>
     <metadata>
       <PackageName>301 Redirect Module</PackageName>
-      <Author>Chris Adams, Max Slabyak, Mark Wiseman, and Chris Castle</Author>
-      <Version>1.6</Version>
+      <Author>Alen Pelin, Chris Adams, Max Slabyak, Mark Wiseman, and Chris Castle</Author>
+      <Version>1.6.1</Version>
       <Revision />
       <License />
       <Comment>A modification of a package contributed to Sitecore Shared Source by Chris Castle. Original is available at http://trac.sitecore.net/301RedirectModule</Comment>
       <Attributes />
-      <Readme>301RedirectModule
+      <Readme>
+301RedirectModule
 =================
 
-An improved version of the Sitecore 301 redirect module. Original version was created by Chris Castle, available at [http://trac.sitecore.net/301RedirectModule](http://trac.sitecore.net/301RedirectModule)
+Source code available here:
+https://github.com/alenpelin/301RedirectModule
 
-Improvements by [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak) and [Mark Wiseman](https://github.com/mawiseman)
+This is fully Sitecore 9.0-compatible version of 301 Redirect Module 1.6 version, original is available at https://github.com/thecadams/301RedirectModule
 
-Code available at:
-https://github.com/Chris-Castle/301RedirectModule
+The original 301 Redirect Module 1.6 is compatible with Sitecore 9.0, however the 301 Redirect Module-1.6.zip original package available on marketplace only supports 8.2. 
+
+Current package supports Sitecore 9.0 for CM instance which means it includes both files and items.
+
+Improvements by [Alen Pelin](https://github.com/alenpelin), [Chris Adams](http://www.cadams.com.au/), [Max Slabyak](https://github.com/maxslabyak) and [Mark Wiseman](https://github.com/mawiseman)
 
 ## Changelog ##
+
+**Version 1.6.1:**
+
+* Added support of configuration roles
+* Created zip for CD instance
+* More (TODO)
 
 **Version 1.6:**
 
@@ -145,8 +156,9 @@ DONE! Now you can add rules to this module that redirect .php files.
 
 You can do this exact same process for other extension types like .html, .jpg/.gif/.png, .pdf, etc as well if you need to redirect those.
 
-Hope that saves someone a few hours of research!</Readme>
-      <Publisher>Chris Castle</Publisher>
+Hope that saves someone a few hours of research!
+      </Readme>
+      <Publisher>Alen Pelin</Publisher>
       <PostStep />
       <PackageID />
     </metadata>

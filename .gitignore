@@ -1,7 +1,8 @@
-_ReSharper*
-bin/
-obj/
-.svn/
+*.pubxml
 *.user
-*.suo
-libraries/
+source/UpgradeLog.htm
+source/.vs/
+source/Backup/
+source/bin/
+source/obj/
+source/packages/
